@@ -1,0 +1,33 @@
+.max-height {
+	min-height: 100vh;
+}
+
+body {
+	background: #2f3f63;
+	font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+	text-align: right;
+}
+
+.quote-container {
+	background: rgba(233, 233, 233, 0.9);
+}
+
+#generate-btn {
+	color: white;
+	background: hsl(352, 100%, 67%);
+	border-color: hsl(352, 100%, 35%);
+	cursor: pointer;
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+}
+#generate-btn:hover {
+	background: hsl(352, 100%, 75%);
+	border-color: hsl(352, 100%, 67%);
+}
+
+.author {
+	color: #ff556d;
+}
