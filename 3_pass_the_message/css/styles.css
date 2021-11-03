@@ -1,0 +1,40 @@
+:root {
+	--lightBlue: #95b8d1;
+	--mainwhite: #f5f5f5;
+	--mainBlack: #333333;
+}
+
+.max-height {
+	min-height: 100vh;
+}
+
+body {
+	background: var(--lightBlue);
+	font-family: "Open Sans", sans-serif;
+}
+
+.message-container {
+	background: var(--mainwhite);
+}
+
+.message-content {
+	color: var(--lightBlue);
+}
+
+#submitBtn {
+	background: var(--lightBlue);
+	color: var(--mainwhite);
+}
+
+#submitBtn:hover {
+	background: hsl(205, 39%, 60%);
+	color: var(--mainBlack);
+}
+
+.feedback {
+	display: none;
+}
+
+.show {
+	display: block;
+}
