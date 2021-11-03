@@ -7,6 +7,7 @@ Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/1_
 *JavaScript Used:* 
 - DOM Manipulation
 - Conditional (ternary) operator
+- Array property
 - Math methods
 - Loops
 - JavaScript CSS Manipulation
