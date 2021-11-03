@@ -6,7 +6,7 @@ Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/2_
 ***
 *JavaScript Used:* 
 - DOM Manipulation
-- Array
+- Array, Array property
 - Objects
 - Math methods
 - JavaScript CSS Manipulation
