@@ -1,0 +1,56 @@
+:root {
+	--mainWhite: #f2fdff;
+	--accentRose: #e1578a;
+}
+
+.max-height {
+	min-height: 100vh;
+}
+
+body {
+	background: var(--mainWhite);
+}
+
+.img-container {
+	min-height: 70vh;
+	max-width: 60%;
+	background: url("../images/bcg-0.jpg") center/780px 780px fixed no-repeat;
+	border: 0.5rem solid var(--accentRose);
+	border-radius: 0.5rem;
+	position: relative;
+}
+
+@media screen and (max-width: 768px) {
+	.img-container {
+		min-height: 60vh;
+		max-width: 85%;
+	}
+}
+
+.btn {
+	background: var(--accentRose);
+	color: var(--mainWhite) !important;
+	font-size: 1.2rem;
+	border: 0.2rem solid var(--accentRose);
+}
+
+.btn-left {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+
+.btn-right {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(50%, -50%);
+}
+
+.btn-left:hover,
+.btn-right:hover {
+	border-color: var(--accentRose);
+	background: var(--mainWhite);
+	color: var(--accentRose) !important;
+}
