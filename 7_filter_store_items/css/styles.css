@@ -43,6 +43,7 @@ h1 {
 .nav-link:hover {
 	color: var(--mainBlack);
 }
+
 @media screen and (min-width: 992px) {
 	.nav-item:not(:last-child) {
 		margin-right: 0.5rem;
@@ -89,7 +90,7 @@ h1 {
 .max-height {
 	min-height: calc(100vh - 86px);
 	background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
-		url("../images/header2.jpg") center/cover fixed no-repeat;
+		url("../images/header.jpg") center/cover fixed no-repeat;
 	position: relative;
 }
 
