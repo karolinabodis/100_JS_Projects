@@ -4,7 +4,7 @@ A JavaScript Project where store items can be filtered based on a class name or 
 
 Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/7_filter_store_items/index.html).
 ***
-*JavaScript used*:
+*JavaScript Used*:
 - DOM Manipulation
 - Control Structures
 - String methods
