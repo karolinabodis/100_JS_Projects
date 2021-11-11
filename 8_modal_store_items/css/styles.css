@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@400;800&display=swap");
+
+:root {
+	--mainPink: #d65983;
+	--lightOrange: #fdba9d;
+	--mainWhite: #fff;
+	--mainBlack: #444;
+	--yellowTrans: rgba(253, 186, 157, 0.5);
+	--mainGrey: #eeeeee;
+}
+
+body {
+	font-family: "Gluten", cursive;
+	background: var(--mainWhite);
+	color: var(--mainBlack);
+}
+
+h1 {
+	font-size: calc(1.5rem + 1.5vw);
+	margin-bottom: 2rem;
+	letter-spacing: 0.3rem;
+}
+
+/******************
+***** NAVBAR ******
+******************/
+/* Nav Links */
+.navbar-toggler {
+	outline: none !important;
+}
+
+.toggler-icon {
+	font-size: 2.5rem;
+	color: var(--mainPink);
+}
+
+.nav-link {
+	color: var(--mainPink);
+	font-size: 1.5rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+	color: var(--mainBlack);
+}
+@media screen and (min-width: 992px) {
+	.nav-item:not(:last-child) {
+		margin-right: 0.5rem;
+	}
+}
+/* end of nav links */
+
+/* Info Icons */
+.cart-info__icon {
+	color: var(--mainBlack);
+	cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+	.mr-lg-3,
+	.mx-lg-3 {
+		margin-right: 1rem !important;
+	}
+}
+
+.cart-info {
+	border: 0.1rem solid var(--mainBlack);
+	color: var(--mainBlack);
+	border-radius: 0.25rem;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+}
+
+.cart-info:hover {
+	background: var(--mainPink);
+	border-color: var(--mainPink);
+	color: var(--mainWhite);
+}
+
+.cart-info:hover .cart-info__icon {
+	color: var(--mainWhite);
+}
+/* end of info icons */
+
+/******************
+***** BANNER ******
+******************/
+/* Banner */
+.max-height {
+	min-height: calc(100vh - 86px);
+	background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+		url("../images/header.jpg") center/cover fixed no-repeat;
+	position: relative;
+}
+
+.banner {
+	color: var(--mainWhite);
+	margin-bottom: 7rem;
+}
+
+.banner-title {
+	color: var(--mainPink);
+	font-size: 3rem;
+}
+
+.banner-mainTitle {
+	color: var(--mainPink);
+	font-size: calc(3.1rem + 1.5vw);
+}
+
+.banner-link {
+	font-size: 1.5rem;
+	color: var(--mainBlack);
+	border: 0.2rem solid var(--mainBlack);
+}
+
+.banner-link:hover {
+	background: var(--mainBlack);
+	color: var(--mainPink);
+}
+/* end of banner */
+
+/* Cart  */
+.cart {
+	position: absolute;
+	min-height: 10rem;
+	background: var(--mainWhite);
+	top: 0;
+	right: 0;
+	transition: all 0.3s ease-in-out;
+	background: rgba(255, 255, 255, 0.5);
+	width: auto;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.show-cart {
+	width: 18rem;
+	padding: 2rem 1.5rem;
+	transform: rotateY(-360deg);
+}
+
+.cart-item {
+	transition: all 2s ease-in-out;
+}
+/* end of cart */
+
+/* Cart Item */
+.cart-item-remove {
+	color: var(--mainPink);
+	transition: all 0.5s ease-in-out;
+}
+
+.cart-item-remove:hover {
+	transform: scale(1.1);
+	color: var(--mainBlack);
+}
+
+#cart-item-price {
+	font-size: 0.8rem;
+}
+/* end of cart item */
+
+/* Cart Buttons */
+.btn-pink {
+	color: var(--mainPink) !important;
+	border-color: var(--mainPink) !important;
+}
+
+.btn-black {
+	color: var(--mainBlack) !important;
+	border-color: var(--mainBlack) !important;
+}
+
+.btn-black:hover {
+	color: var(--mainPink) !important;
+	background: var(--mainBlack) !important;
+}
+
+.btn-pink:hover {
+	background: var(--mainPink) !important;
+	color: var(--mainBlack) !important;
+}
+/* end of cart buttons */
+
+/******************
+***** ABOUT *******
+******************/
+/* About */
+.about-img__container {
+	position: relative;
+}
+
+.about-img__container::before {
+	content: "";
+	position: absolute;
+	top: -1.5rem;
+	left: -1.7rem;
+	width: 100%;
+	height: 100%;
+	outline: 0.5rem solid var(--lightOrange);
+	z-index: -1;
+	transition: all 1s ease-in-out;
+}
+
+.about-img__container:hover:before {
+	top: 0;
+	left: 0;
+}
+/* end of about */
+
+/******************
+***** STORE *******
+******************/
+/* Store Items */
+.store {
+	background: var(--mainGrey);
+}
+
+.img-container {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.store-img {
+	transition: all 1s ease-in-out;
+}
+
+.img-container:hover .store-img {
+	transform: scale(1.2);
+}
+
+.store-item-icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0.75rem;
+	background: var(--lightOrange);
+	border-top-left-radius: 1rem;
+	transition: all 1s ease-in-out;
+	transform: translate(100%, 100%);
+}
+
+.img-container:hover .store-item-icon {
+	transform: translate(0, 0);
+}
+
+.store-item-icon:hover {
+	color: var(--mainWhite);
+}
+
+.store-item-value {
+	color: var(--mainPink);
+}
+/* end of store items */
+
+/* Search Box */
+.search-box {
+	background: var(--mainPink);
+	color: var(--mainBlack);
+	height: 2.4rem;
+}
+/* end of search box */
+
+/*****************
+***** MODAL ******
+*****************/
+.lightbox-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.6) !important;
+	display: none;
+}
+
+.show {
+	display: flex;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.lightbox-holder {
+	position: relative;
+}
+
+.lightbox-item {
+	min-height: 80vh;
+	background: url("../images/cake-1.jpeg") center/1000px 800px fixed no-repeat;
+	border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 992px) {
+	.lightbox-item {
+		min-height: 60vh;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.col-md-10 {
+		flex: 0 0 auto;
+		width: 53.33333333%;
+	}
+}
+
+.lightbox-close {
+	color: var(--lightOrange);
+	font-size: 2.5rem;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.lightbox-close:hover {
+	color: var(--mainPink);
+}
+
+.lightbox-control {
+	position: absolute;
+	font-size: 4rem;
+	color: var(--lightOrange);
+	transition: all 0.5s linear;
+	cursor: pointer;
+}
+
+.lightbox-control:hover {
+	color: var(--mainPink);
+}
+
+.btnLeft {
+	top: 50%;
+	left: 0;
+	transform: translateX(-75%);
+}
+
+.btnRight {
+	top: 50%;
+	right: 0;
+	transform: translateX(75%);
+}
