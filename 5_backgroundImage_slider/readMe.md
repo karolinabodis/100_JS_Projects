@@ -4,7 +4,7 @@ A JavaScript Project that shows up the next image when an arrow is clicked.
 
 Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/5_backgroundImage_slider/index.html).
 ***
-*JavaScript used*:
+*JavaScript Used*:
 - DOM Manipulation
 - Control Structures
 - Array
