@@ -99,14 +99,14 @@
 		lightbox.classList.remove("show");
 	};
 
-	// a modal pops up
+	// a lightbox pops up
 	itemImages.forEach((image) => {
 		image.addEventListener("click", () => {
 			showCurrentImage(image);
 		});
 	});
 
-	// cycling through the modal window by clicking the Left || Right arrow
+	// cycling through the lightbox by clicking the Left || Right arrow
 	lightboxControl.forEach((control) => {
 		control.addEventListener("click", (e) => {
 			if (e.target.parentElement.classList.contains("btnLeft")) {
@@ -117,17 +117,17 @@
 		});
 	});
 
-	// closing the modal window by clicking the 'X' icon
+	// closing the lightbox by clicking the 'X' icon
 	lightboxClose.addEventListener("click", () => {
 		removeImage();
 	});
 
 	window.addEventListener("keyup", (e) => {
-		// closing the modal window by pressing the 'Escape' key
+		// closing the lightbox by pressing the 'Escape' key
 		if (e.key === "Escape") {
 			removeImage();
 		}
-		// cycling through the modal window by pressing the Left || Right arrow
+		// cycling through the lightbox by pressing the Left || Right arrow
 		if (e.key === "ArrowLeft") {
 			showPrevImage();
 		} else if (e.key === "ArrowRight") {
