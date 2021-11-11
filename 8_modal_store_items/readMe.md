@@ -7,7 +7,7 @@ Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/8_
 
 ---
 
-_JavaScript used:_
+_JavaScript Used:_
 
 - DOM Manipulation
 - Control Structures
