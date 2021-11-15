@@ -1,0 +1,93 @@
+:root {
+	--mainWhite: #f4f4f4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #d7e9f7;
+}
+
+.calculator {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	max-width: 40rem;
+	padding: 0 3rem;
+}
+
+.screen {
+	width: 100%;
+	font-size: 3rem;
+	padding: 2rem 2rem 1rem;
+	background: #444;
+	color: var(--mainWhite);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: none;
+}
+
+.error {
+	text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+	.error {
+		font-size: 1.6rem;
+	}
+}
+
+.border-left {
+	border-bottom-left-radius: 10px;
+}
+.border-right {
+	border-bottom-right-radius: 10px;
+}
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	transition: all 0.5s linear;
+}
+
+button {
+	flex: 0 0 25%;
+	border: 1px solid #666;
+	padding: 0.25rem 0;
+	transition: all 1s ease;
+}
+
+button:hover {
+	background: #6c8199;
+}
+
+.btn-green {
+	background: #9dc8c2;
+}
+
+.btn-yellow {
+	background: #faeee0;
+}
+
+.btn,
+.btn-equal,
+.btn-clear {
+	font-size: 2.5rem;
+}
+
+.btn-equal {
+	background: #025955;
+	color: var(--mainWhite);
+}
+
+.btn-clear {
+	background: #f25287;
+}
