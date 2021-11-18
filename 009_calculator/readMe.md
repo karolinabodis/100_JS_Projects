@@ -3,7 +3,7 @@
 A JavaScript Project where the calculator evaluates basic expressions.
 > The solution works to the extent that the user uses the calculator flawlessly. No error handling implemented yet.
 
-Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/9_calculator/index.html).
+Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/009_calculator/index.html).
 
 ---
 

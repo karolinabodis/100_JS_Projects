@@ -4,19 +4,19 @@ A JavaScript Project where daily tasks, activities can be created and listed.
 
 _Goals:_
 
-✔️ If you try to add an item without text, you should receive an alert telling the user to add an item.
+✔️ If the user tries to add an item without text, an alert should pop up telling the user to add an item.
 
-✔️ The clear button should clear your page.
+✔️ The clear button should clear the page.
 
 ✔️ Data should persist since this app uses local storage.
 
-Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/11_todo_list/index.html).
+Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/011_todo_list/index.html).
 
 ---
 
 _JavaScript Used:_
 
-- Generating an unique id
+- Generating a unique id
 - DOM Manipulation
 - Control Structures
 - Ternary Operator

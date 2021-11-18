@@ -6,7 +6,7 @@ const itemList = document.querySelector(".item-list");
 const errorMessage = document.querySelector(".feedback");
 const clearButton = document.getElementById("clear-list");
 
-// generate an unique id to keep track of tasks
+// generate a unique id to keep track of tasks
 const uid = function () {
 	return Date.now().toString(36) + Math.random().toString(36).substr(2);
 };

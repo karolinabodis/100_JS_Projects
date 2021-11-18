@@ -12,7 +12,7 @@ _Goals:_
 
 ✔️ Extra error handling: during the calculation hide the Calculate button and disable the input fields
 
-Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/10_tip_calculator/index.html).
+Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/010_tip_calculator/index.html).
 
 ---
 

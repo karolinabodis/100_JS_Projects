@@ -2,7 +2,7 @@
 
 A JavaScript Project that shows up the next testimonial when an arrow is clicked.
 
-Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/6_testimonial_slider/index.html).
+Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/006_testimonial_slider/index.html).
 ***
 *JavaScript Used*:
 - DOM Manipulation
