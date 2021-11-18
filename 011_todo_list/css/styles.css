@@ -1,0 +1,107 @@
+:root {
+	--mainWhite: #f5f5f5;
+	--mainGreen: #81cfaa;
+	--mainBlack: #555;
+	--mainRed: #fa7e70;
+	--mainBlue: #36bde2;
+}
+
+body {
+	font-family: "Kalam", cursive;
+	background: var(--mainBlack);
+	color: var(--mainWhite);
+}
+
+.btn-green {
+	border-color: var(--mainGreen);
+	background: transparent;
+	color: var(--mainGreen);
+	margin-left: 1.5rem;
+}
+
+.btn-green:hover {
+	background: var(--mainGreen);
+	color: var(--mainBlack);
+}
+
+.btn-red {
+	border-color: var(--mainRed);
+	background: transparent;
+	color: var(--mainRed);
+}
+
+.btn-red:hover {
+	background: var(--mainRed);
+	color: var(--mainBlack);
+}
+
+.form-control {
+	border-color: var(--mainGreen) !important;
+	border-top-right-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+}
+
+.feedback {
+	display: none;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item-name {
+	margin-left: 0.5rem;
+	margin-bottom: 0;
+}
+
+.item-icon {
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.item-icon:first-child {
+	margin-right: 1rem;
+}
+.item-icon:last-child {
+	margin-left: 1rem;
+	margin-right: 0.5rem;
+}
+
+.complete-item {
+	color: var(--mainGreen);
+}
+
+.complete-item:hover {
+	color: hsl(151, 45%, 40%);
+}
+
+.edit-item {
+	color: var(--mainBlue);
+}
+
+.edit-item:hover {
+	color: hsl(193, 75%, 40%);
+}
+
+.delete-item {
+	color: var(--mainRed);
+}
+
+.delete-item:hover {
+	color: hsl(6, 93%, 45%);
+}
+
+.completed {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.visibility {
+	opacity: 0.5;
+}
+
+.showItem {
+	display: block;
+}
