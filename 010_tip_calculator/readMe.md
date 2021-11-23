@@ -20,6 +20,7 @@ _JavaScript Used:_
 
 - DOM Manipulation
 - Control Structures
+- Number.toFixed() method
 - parseFloat(), parseInt() functions
 - setTimeout() method
 - DOM TokenLists

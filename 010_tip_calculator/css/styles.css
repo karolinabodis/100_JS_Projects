@@ -10,7 +10,7 @@
 }
 
 body {
-	background: var(--lightred);
+	background: hsl(264, 23%, 76%);
 }
 
 .card-title {
