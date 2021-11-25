@@ -10,7 +10,7 @@ _Goals:_
 
 ✔️ If an item identical with one from the list an alert-warning feedback should be received.
 
-✔️ One or all items should be able to deleted.
+✔️ One or all items should be able to removed.
 
 ✔️ All the other items should persist by means of Local Storage.
 
