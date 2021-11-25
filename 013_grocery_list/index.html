@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Grocery List</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row max-height align-items-center">
+      <div class="col-11 mx-auto col-md-10 text-center py-3">
+        <h1 class="text-uppercase app-title font-weight-bold mb-5">grocery list
+        </h1>
+        <span><i class="fas fa-shopping-basket basket"></i></span>
+
+        <!-- Feedback -->
+        <div class="feedback text-capitalize alert">
+        </div>
+        <!-- end of feedback -->
+
+        <!-- Form -->
+        <form class="form-inline my-2 justify-content-center" id="input-form">
+          <input class="form-control form-control-lg  text-capitalize w-75" type='text' placeholder="enter an item ..."
+            id="input-value">
+          <button class="btn btn-lg my-2 mx-2 submitBtn" type="submit"><i class="fas fa-pen"></i></button>
+        </form>
+        <!-- end of form -->
+
+        <div class="list-container my-5">
+          <!-- Item List -->
+          <div class="list-items">
+            <!-- Single Item -->
+            <!-- <div class="item my-3 d-flex justify-content-between p-2">
+              <h4 class="item-title text-capitalize">item name</h4>
+              <span class="remove-icon text-danger"><i class="fas fa-trash"></i></span>
+            </div> -->
+            <!-- end of single item -->
+
+          </div>
+          <!-- end of item list -->
+        </div>
+        <button class="clearBtn btn-lg btn-outline-danger text-capitalize mx-auto" button="button">clear
+          items</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Main JS -->
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

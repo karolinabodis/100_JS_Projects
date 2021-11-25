@@ -233,7 +233,8 @@
 	};
 
 	// delete a cartItem by clicking the trash icon
-	window.addEventListener("click", (e) => {
+	cartItems.addEventListener("click", (e) => {
+		// using the parent element to access the cart items - EVENT BUBBLING -
 		if (e.target.parentElement.classList.contains("cart-item-remove")) {
 			const currentImage =
 				e.target.parentElement.previousElementSibling.previousElementSibling

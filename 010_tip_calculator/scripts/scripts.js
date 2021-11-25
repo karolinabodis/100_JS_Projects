@@ -69,7 +69,7 @@
 	};
 
 	// create an error if the user forgets to add input or the input is blank
-	const createParagraphs = (text) => {
+	const createParagraph = (text) => {
 		const newParagraph = document.createElement("p");
 		newParagraph.textContent = text;
 		errorMessage.appendChild(newParagraph);
@@ -80,13 +80,13 @@
 		errorMessage.classList.add("showItem", "alert-danger");
 
 		if (billInput.value === "" || parseFloat(billInput.value) <= 0) {
-			createParagraphs("Bill amount can not be blank or zero");
+			createParagraph("Bill amount can not be blank or zero");
 		}
 		if (guestsInput.value === "" || parseInt(guestsInput.value) < 1) {
-			createParagraphs("Number of guests must be greater than zero");
+			createParagraph("Number of guests must be greater than zero");
 		}
 		if (serviceInput.value === "0") {
-			createParagraphs("You must select a service");
+			createParagraph("You must select a service");
 		}
 	};
 

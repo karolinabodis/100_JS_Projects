@@ -1,0 +1,82 @@
+:root {
+	--lightGreen: #99c2c2;
+	--darkGreen: #327483;
+	--darkOrange: #e8867d;
+	--lightOrange: #ffb7a8;
+	--lightGrey: #aaa;
+	--mainWhite: #f4f4f4;
+}
+
+body {
+	background: var(--lightGreen);
+	font-family: "Caveat", cursive;
+}
+
+.app-title {
+	color: var(--darkGreen);
+	margin-right: 1rem;
+	display: inline-block;
+}
+
+.basket {
+	font-size: 2.5rem;
+	color: var(--darkGreen);
+}
+
+.submitBtn {
+	background: var(--lightOrange);
+	border: 2px inset var(--darkOrange);
+	color: var(--darkGreen);
+	font-size: 1.5rem;
+}
+
+.submitBtn:hover {
+	background: var(--darkOrange);
+	color: var(--mainWhite);
+}
+
+.feedback {
+	display: none;
+	font-size: 1.3rem;
+}
+
+.feedback > p {
+	margin-bottom: 0;
+}
+
+.showItem {
+	display: block;
+}
+
+.item {
+	color: var(--darkGreen);
+	border-bottom: 0.1rem dotted var(--mainWhite);
+	transition: all 0.5s ease-in-out;
+}
+
+.item:hover {
+	border-color: var(--darkOrange);
+	color: var(--mainWhite);
+	/* cursor: pointer; */
+}
+
+#input-value {
+	background: transparent;
+	border: none;
+	border-bottom: 0.15rem solid var(--lightOrange);
+	border-radius: 0;
+	color: var(--darkGreen);
+	font-size: 1.7rem;
+}
+
+#input-value::placeholder {
+	color: var(--darkGreen);
+}
+
+.remove-icon {
+	cursor: pointer;
+}
+
+.remove-icon:hover {
+	transform: scale(1.4);
+}
