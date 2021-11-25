@@ -14,7 +14,7 @@ _Goals:_
 
 ✔️ All the other items should persist by means of Local Storage.
 
-Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/13_grocery_list/index.html).
+Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/013_grocery_list/index.html).
 
 ---
 
