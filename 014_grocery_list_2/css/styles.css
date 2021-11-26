@@ -23,6 +23,8 @@ body {
 	margin-top: 3rem;
 }
 
+/* Add Items */
+/*************/
 .addItems-container {
 	background: var(--lightYellow);
 }
@@ -86,7 +88,10 @@ body {
 	color: var(--darkGreen);
 	box-shadow: 1px 1px 5px var(--mainDark);
 }
+/* end of add items */
 
+/* Display Items */
+/*****************/
 .displayItems-container {
 	background: var(--darkGreen);
 	border-color: var(--lightGreen);
@@ -97,6 +102,7 @@ body {
 	margin-bottom: 0.25rem;
 }
 
+/* Grocery Item */
 .grocery-item {
 	background: rgba(225, 225, 225, 0.2);
 	border-radius: 0.5rem;
@@ -132,6 +138,7 @@ body {
 	color: var(--lightRed);
 	transform: scale(1.5);
 }
+/* end of grocery item */
 
 .displayItems-clear {
 	background: transparent;
@@ -149,6 +156,7 @@ body {
 .text-capitalize {
 	text-transform: capitalize;
 }
+/* end of display items */
 
 /* Utility action classes */
 /**************************/
