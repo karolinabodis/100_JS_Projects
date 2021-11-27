@@ -94,7 +94,7 @@ let groceryList = getSavedItems();
 // render the saved items
 displayItems(groceryList);
 
-// delete an item from the groceryList - add the eventListener to the PARENT
+// delete an item from the groceryList - add the eventListener to the PARENT -
 itemsList.addEventListener("click", (e) => {
 	const deleteIcon = e.target.parentElement;
 
