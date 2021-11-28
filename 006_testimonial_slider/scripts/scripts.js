@@ -11,7 +11,7 @@
 	let index = 0;
 	const customers = [];
 
-	// create a new Customer object via Customer construction function
+	// create a new Customer object via Customer constructor function
 	class Customer {
 		constructor(image, firstName, testimonial) {
 			this.image = image;
