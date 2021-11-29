@@ -8,6 +8,11 @@ const listAlert = document.querySelector(".displayItems-action");
 const itemsList = document.querySelector(".grocery-list");
 const clearItems = document.querySelector(".displayItems-clear");
 
+// read and parse the groceryList when the app starts
+let groceryList = getSavedItems();
+// render the saved items
+displayItems(groceryList);
+
 submitItem.addEventListener("click", (e) => {
 	e.preventDefault();
 
@@ -40,7 +45,7 @@ submitItem.addEventListener("click", (e) => {
 });
 
 // create an alert
-const showAlert = (alertType, text, alertClass) => {
+function showAlert(alertType, text, alertClass) {
 	// empty the alert before rendering the new one
 	alertType.textContent = "";
 
@@ -54,12 +59,12 @@ const showAlert = (alertType, text, alertClass) => {
 };
 
 // save items to localStorage
-const saveItems = (groceryList) => {
+function saveItems(groceryList) {
 	localStorage.setItem("grocery-list", JSON.stringify(groceryList));
 };
 
 // fetch existing items from localStorage
-const getSavedItems = () => {
+function getSavedItems() {
 	const listJSON = localStorage.getItem("grocery-list");
 
 	// validate the data if it is JSON
@@ -71,7 +76,7 @@ const getSavedItems = () => {
 };
 
 // render the groceryList
-const displayItems = (groceryList) => {
+function displayItems(groceryList) {
 	// clear (the comment and) the itemsList before rendering anything
 	itemsList.innerHTML = "";
 
@@ -89,11 +94,6 @@ const displayItems = (groceryList) => {
 	});
 };
 
-// read and parse the groceryList when the app starts
-let groceryList = getSavedItems();
-// render the saved items
-displayItems(groceryList);
-
 // delete an item from the groceryList - add the eventListener to the PARENT -
 itemsList.addEventListener("click", (e) => {
 	const deleteIcon = e.target.parentElement;
@@ -105,7 +105,7 @@ itemsList.addEventListener("click", (e) => {
 	}
 });
 
-const deleteItem = (item) => {
+function deleteItem(item) {
 	// find the specific item in the groceryList and remove it
 	groceryList.map((groceryItem) => {
 		if (item === groceryItem) {
