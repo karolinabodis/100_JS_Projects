@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Course Form</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-11 mx-auto text-center my-5">
+        <!-- FORM -->
+        <form class="my-5" id="customer-form">
+          <h2 class="text-capitalize mb-4">get a free course</h2>
+          <div class="feedback text-center  text-capitalize">
+            calculating.....
+          </div>
+          <!-- Single Input -->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control text-capitalize name" id="name" placeholder="customer name">
+          </div>
+          <!-- end of single input -->
+
+          <!-- Single Input -->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-book"></i></span>
+            </div>
+            <input type="text" class="form-control text-capitalize course" placeholder="course" id="course">
+          </div>
+          <!-- end of single input -->
+
+          <!-- Single Input -->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+            </div>
+            <input type="text" class="form-control text-capitalize author" placeholder="author" id="author">
+          </div>
+          <!-- end of single input -->
+
+          <button type="submit" class="btn btn-block submitBtn text-uppercase mt-4" disabled>submit</button>
+        </form>
+        <!-- end of form -->
+
+        <!-- Loader -->
+        <div class="loading">
+          <img src="images/loading.gif" alt="">
+        </div>
+        <!-- end of loader -->
+
+        <!-- CUSTOMER LIST -->
+        <div class="row customer-list">
+          <!-- Single Customer -->
+          <div class="col-11 mx-auto col-md-6 col-lg-4 my-3">
+            <!-- Card -->
+            <div class="card text-left">
+              <img src="images/customer-1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <!-- Customer Name -->
+                <h6 class="text-capitalize "><span class="badge badge-info mr-2">name :</span><span
+                    id="customer-name">john anderson</span></h6>
+                <!-- end of customer name -->
+
+                <!-- Customer Course -->
+                <h6 class="text-capitalize my-3"><span class="badge badge-dark mr-2">course :</span><span
+                    id="customer-course">
+                    css basics
+                  </span></h6>
+                <!-- end of customer course -->
+
+                <!-- Course Author -->
+                <h6 class="text-capitalize"><span class="badge badge-success mr-2">author :</span><span
+                    id="course-author">john anderson</span></h6>
+                <!-- end of course author -->
+              </div>
+            </div>
+            <!-- end of card -->
+          </div>
+          <!-- end of single customer -->
+        </div>
+        <!-- end of customer list -->
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Main JS -->
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
