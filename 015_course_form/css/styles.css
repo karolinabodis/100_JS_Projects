@@ -1,0 +1,61 @@
+:root {
+	--mainWhite: #f7f9f9;
+	--mainBrown: #a76d60;
+	--darkBrown: #601700;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background: var(--mainWhite);
+}
+
+.input-group-text {
+	background: var(--mainBrown);
+	color: var(--mainWhite);
+	border-color: var(--mainBrown);
+}
+
+.form-control {
+	border: 0.1rem solid var(--mainBrown);
+}
+
+.submitBtn {
+	background: var(--darkBrown);
+	color: var(--mainWhite);
+	margin: auto;
+	padding: 0.5rem 0.75rem;
+	transition: all 0.75s ease-in-out;
+	vertical-align: middle;
+	width: 40%;
+}
+
+.submitBtn:hover {
+	background: var(--mainBrown);
+	color: var(--mainWhite);
+}
+
+.fail {
+	border-color: red;
+	border-width: 0.2rem;
+}
+
+.complete {
+	border-color: green;
+	border-width: 0.2rem;
+}
+
+.feedback {
+	display: none;
+}
+
+.loading {
+	display: none;
+}
+
+:disabled {
+	opacity: 0.2 !important;
+}
+
+.showItem {
+	display: block;
+}
