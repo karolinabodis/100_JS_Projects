@@ -23,13 +23,6 @@
 			this.author = author;
 			this.image = `images/customer-${getRandomNumber()}.jpg`;
 		}
-		createCustomer() {
-			this.fullName.trim().toLowerCase();
-			this.course.trim().toLowerCase();
-			this.author.trim().toLowerCase();
-
-			// customers.push(customer);
-		}
 		checkInputFields() {
 			// blur event - fires when an element has lost focus -
 			// make the input fields blurry
@@ -74,7 +67,7 @@
 			}, 2000);
 		}
 		displayCourse(customer) {
-			// clear the customerList before rendering anything
+			// clear the customerList before render anything
 			// customerList.innerHTML = "";
 
 			// insert an HTML element inside customerList
