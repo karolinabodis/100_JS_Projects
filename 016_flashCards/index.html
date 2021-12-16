@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Flashcards</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-11 col-lg-6 my-3">
+        <h3 class="text-capitalize">flashcards</h3>
+        <button class="btn text-capitalize my-2 show-btn" id="show-btn">add question</button>
+        <!-- CARD -->
+        <div class="card card-body my-3 question-card">
+          <!-- Close button -->
+          <a href="#" class="close-btn mt-0">
+            <i class="fas fa-window-close"></i>
+          </a>
+          <!-- end of close button -->
+          <div class="feedback alert w-75 text-capitalize">
+            Feedback text
+          </div>
+          <!-- QUESTION -->
+          <form id="question-form">
+            <!-- Single Input -->
+            <h5 class="text-capitalize">question</h5>
+            <div class="form-group">
+              <textarea class="w-100 text-capitalize" id="question-input" rows="3"></textarea>
+            </div>
+            <!-- end of single input -->
+
+            <!-- Single Input -->
+            <h5 class="text-capitalize">answer</h5>
+            <div class="form-group">
+              <textarea class="w-100 text-capitalize" id="answer-input" rows="3"></textarea>
+            </div>
+            <!-- end of single input -->
+
+            <button type="submit" class="btn submitBtn text-capitalize w-50">save</button>
+          </form>
+          <!-- end of question -->
+        </div>
+        <!-- end of card -->
+      </div>
+    </div>
+
+    <!-- QUESTIONS LIST -->
+    <div class="row px-2" id="questions-list">
+      <!-- Single Card -->
+      <!-- <div class="col-md-4">
+         <div class="card card-body flashcard my-3">
+        <h4 class="text-capitalize">question title?</h4>
+        <a href="#" class="text-capitalize my-3 show-answer">show/hide answer</a>
+        <h5 class="answer mb-3 text-capitalize">question answer</h5>
+        <div class="flashcard-btn d-flex justify-content-between">
+        <a href="#" id="edit-flashcard" class=" btn my-1 edit-flashcard text-uppercase" data-id="">edit</a>
+        <a href="#" id="delete-flashcard" class=" btn my-1 delete-flashcard text-uppercase" data-id="">delete</a>
+       </div>      
+       </div>
+       </div> -->
+      <!-- end of single card -->
+    </div>
+    <!-- end of question list -->
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Main JS -->
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
