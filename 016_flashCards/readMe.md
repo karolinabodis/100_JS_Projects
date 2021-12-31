@@ -18,7 +18,7 @@ _Goals:_
 
 ✔️ All the other cards should persist by means of Local Storage.
 
-Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/016_flashCard/index.html).
+Click here for [live preview](https://karolinabodis.github.io/100_JS_Projects/016_flashCards/index.html).
 
 ---
 
