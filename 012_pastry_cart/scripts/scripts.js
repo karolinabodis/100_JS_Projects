@@ -252,6 +252,7 @@
 
 	// clear the cart
 	clearCart.addEventListener("click", () => {
+		cartList = [];
 		clearCartDisplay();
 	});
 
